@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Load Roboto with bold weight */
+
+h1 {
+    font-weight: normal;
+    color: #ffffff;
+}
+
+div.info {
+    margin: 10px 0;
+}
+
+div.info * {
+    color: #ffffff;
+}
+
+#icons {
+    display: none;
+    filter: url(#drop-shadow);
+}
+
+.container {
+    position: absolute;
+    left: 1000px;
+}
+
+#vehicle {
+    fill: #ffffff;
+}
+
+div.menuHolder {
+    user-select: none;
+    -moz-user-select: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+}
+
+svg.icons {
+    display: none;
+    filter: url(#drop-shadow);
+}
+
+svg.menu {
+    position: absolute;
+    overflow: visible;
+    transition: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+svg.menu.inner {
+    transform: scale(1.0) rotate(-10deg);
+    opacity: 0;
+    visibility: hidden;
+}
+
+svg.menu.outer {
+    opacity: 0;
+    visibility: hidden;
+}
+
+svg.menu > g > path {
+    fill: #1a1a1a;
+    transition: 0.3s;
+}
+
+svg.menu > g.sector > path {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+svg.menu > g.sector > text,
+svg.menu > g.sector > use {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    fill: #1a1a1a;
+}
+
+svg.menu > g.sector:hover > path {
+    fill: #333333;
+    transform: scale(1.05);
+}
+
+svg.menu > g.center:hover > circle {
+    fill: #800303;
+}
+
+svg.menu > g.sector:hover > text,
+svg.menu > g.sector:hover > use {
+    fill: #ffffff;
+}
+
+svg.menu > g.sector:hover > svg,
+svg.menu > g.center:hover > svg {
+    fill: #ffffff;
+}
+
+svg.menu > g.center > circle {
+    cursor: pointer;
+    fill: #3d3d3d;
+    fill-opacity: 0.2s;
+}
+
+svg.menu > g.center > text,
+svg.menu > g.center > use {
+    margin-top: 5px;
+    font-size: 2.8px;
+    cursor: pointer;
+    fill: #ffffff;
+}
